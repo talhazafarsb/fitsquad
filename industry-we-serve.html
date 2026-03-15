@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">   
+        <link rel="stylesheet" href="css/fancybox.min.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/odometer.min.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/flaticon.css">
+        <title>Sectors - FitSQUAD</title>
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <meta name="description" content="We Do Security Service, Questioning and Researching Studies.">
+        <style type="text/css">
+          .sectors-section {
+            background: url('img/qualitybg12.jpg') center center/cover no-repeat;
+            position: relative;
+            padding: 60px 0;
+            color: #fff;
+          }
+          /* Dark overlay on background */
+          .sectors-section::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 0;
+          }
+          /* Content inside section */
+          .sectors-section .container {
+            position: relative;
+            z-index: 1;
+          }
+          /* Section Title */
+          .sectors-section .title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 0.3em;
+            font-weight: 700;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+          }
+          .sectors-section .subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem auto;
+            color: #ddd;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+          }
+          /* Card */
+          .sector-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+            background: #222;
+          }
+          .sector-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            border-radius: 12px 12px 0 0;
+            display: block;
+          }
+          .sector-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            z-index: 10;
+          }
+          .sector-card:hover img {
+            transform: scale(1.1);
+          }
+          /* Overlay */
+          .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.75);
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 1.1rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 0 0 12px 12px;
+            line-height: 1.3;
+          }
+          .overlay span {
+            font-weight: 700;
+            display: block;
+            margin-bottom: 6px;
+            font-size: 1.3rem;
+          }
+          .overlay p {
+            font-weight: 400;
+            font-size: 0.95rem;
+            color: #ccc;
+            margin: 0;
+          }
+          .sector-card:hover .overlay {
+            opacity: 1;
+          }
+        </style>
+    </head>
+    <body>
+      <div class="loadwraps">
+        <div class="dot"></div>
+        <div class="outline"><span></span></div>
+     </div>
+      <aside class="side-widget">
+            <div class="inner">
+            <!-- Logo Menu Mobile -->
+              <div class="logo"> <a href="index.html"><img src="img/logo1.png" alt="Image"></a> </div>
+              <div class="hide-mobile">
+                <div class="or">
+                    <h2 class="h2-baslik-anasayfa-ozel1"> Contact Information </h2>
+                </div>
+                <div class="bosluk2dt"></div>
+                <div class="iconsv"><i class="flaticon-call"></i></div>
+                <address class="address">
+                <p><a href="#">07706 195111</a>
+                    <div class="bosluk2dt"></div>
+                    <div class="iconsv"><i class="flaticon-email"></i></div>
+                    <a href="#">Security@fitsquad.uk</a>
+                    <div class="bosluk2dt"></div>
+                    <div class="iconsv"><i class="flaticon-location"></i></div>
+                    <a href="#">128 City Rd, London EC1V 2NX, UK</a>
+                    <div class="bosluk2dt"></div>
+                    <div class="or">
+                        <a href="#"><img src="img/facebook1.png" alt=""></a>
+                        <a href="#"><img src="img/instagram1.png" alt=""></a>
+                    </div>
+                </p>
+                </address>
+              </div>
+              <div class="show-mobile">
+                <div class="site-menu">
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">Who Are We</a></li>
+                        <li><a href="services.html">Services </a><span class="sb" style="font-size: 18px">+</span>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="services/security-guard.html">Security Guard</a></li>
+                                <li><a class="dropdown-item" href="services/cctv-surveillance.html">CCTV Surveillance</a></li>
+                                <li><a class="dropdown-item" href="services/corporate-security.html">Corporate Security</a></li>
+                                <li><a class="dropdown-item" href="services/event-security.html">Event Srcurity</a></li>
+                                <li><a class="dropdown-item" href="services/vehicle-petrol.html">Vehicle Petrol</a></li>
+                                <li><a class="dropdown-item" href="services/key-holding.html">Key Holding</a></li>
+                                <li><a class="dropdown-item" href="services/k9-security.html">K9 Security</a></li>
+                                <li><a class="dropdown-item" href="services/construction-security.html">Construction Security</a></li>
+                                <li><a class="dropdown-item" href="services/private-property-security.html">Private Property Security</a></li>
+                              </ul>
+                        </li>
+                        <li><a href="industry-we-serve.html">Sectors</a></li>
+
+                        <li><a href="#">Locations </a><span class="sb" style="font-size: 18px">+</span>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Birmingham</a></li>
+                                <li><a class="dropdown-item" href="#">London & Surrounding Areas</a></li>
+                                <li><a class="dropdown-item" href="#">Manchester</a></li>
+                              </ul>
+                        </li>
+
+                        <!-- <li><a href="#">Locations</a></li> -->
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="contact-us.html">Employment</a></li>
+                    </ul>
+                  </div>
+              </div>
+              <small>© 2026 - FSMS</small> </div>
+          </aside>
+          <nav class="navbar">
+            <div class="container">
+            <!-- Logo Menu Desktop -->
+              <div class="logo"> <a href="index.html"><img src="img/logo1.png" alt="Image"></a> </div>
+              <div class="site-menu">
+                <ul class="menueffect">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">Who Are We</a></li>
+                <li><a href="services.html">Services +</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="services/security-guard.html">Security Guard</a></li>
+                        <li><a class="dropdown-item" href="services/cctv-surveillance.html">CCTV Surveillance</a></li>
+                        <li><a class="dropdown-item" href="services/corporate-security.html">Corporate Security</a></li>
+                        <li><a class="dropdown-item" href="services/event-security.html">Event Srcurity</a></li>
+                        <li><a class="dropdown-item" href="services/vehicle-petrol.html">Vehicle Petrol</a></li>
+                        <li><a class="dropdown-item" href="services/key-holding.html">Key Holding</a></li>
+                        <li><a class="dropdown-item" href="services/k9-security.html">K9 Security</a></li>
+                        <li><a class="dropdown-item" href="services/construction-security.html">Construction Security</a></li>
+                        <li><a class="dropdown-item" href="services/private-property-security.html">Private Property Security</a></li>
+                      </ul>
+                </li>
+                <li><a href="industry-we-serve.html">Sectors</a></li>
+                
+                <li><a href="#">Locations +</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Birmingham</a></li>
+                        <li><a class="dropdown-item" href="#">London & Surrounding Areas</a></li>
+                        <li><a class="dropdown-item" href="#">Manchester</a></li>
+                      </ul>
+                </li>
+
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="contact-us.html">Employment</a></li>
+                </ul>
+              </div>
+              <div class="hamburger-menu"> <span></span> <span></span> <span></span> </div>
+              <div class="navbar-button"> <a href="#"><i class="flaticon-call iconp"></i>&nbsp;&nbsp;&nbsp;07706 195111</a> </div>
+            </div>
+          </nav>
+      <header class="page-header wow fadeInUp" data-wow-delay="0.5s" data-background="img/page-header.jpg">
+        <div class="container">
+          <h2>Sectors</h2>
+          <div class="bosluk3"></div>
+          <p><a href="index.html">Home</a> <i class="flaticon-right-chevron"></i> Sectors</p>
+        </div>
+        <!-- end container --> 
+      </header>
+        <main>
+         <!--About Top-->
+         <section class="sectors-section">
+          <div class="container">
+            <h2 class="title">Sectors We Serve</h2>
+            <p class="subtitle">
+              Fit Squad Security serves a wide range of sectors with tailored protection solutions.
+            </p>
+
+            <div class="row g-4">
+
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="sector-card">
+                  <img src="img/sectors/warehouse.jpg" alt="Warehouse Security" />
+                  <div class="overlay">
+                    <span>Warehouse Security</span>
+                    <!-- <p>Protection for logistics & storage facilities.</p> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="sector-card">
+                  <img src="img/sectors/event.jpg" alt="Event Security" />
+                  <div class="overlay">
+                    <span>Special Event Security</span>
+                    <!-- <p>Ensuring safety at large scale events.</p> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="sector-card">
+                  <img src="img/sectors/retail-shopping-mall-1.jpg" alt="Mall Security" />
+                  <div class="overlay">
+                    <span>Mall & Retail Security</span>
+                    <!-- <p>Protecting shopping centers & retail outlets.</p> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="sector-card">
+                  <img src="img/sectors/private-home-1.jpg" alt="Residential Security" />
+                  <div class="overlay">
+                    <span>Private Home Security</span>
+                    <!-- <p>Safety solutions for homes & residential areas.</p> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="sector-card">
+                  <img src="img/sectors/office-medical-1.jpg" alt="Office & Medical Center" />
+                  <div class="overlay">
+                    <span>Office & Medical Center</span>
+                    <!-- <p>Protection for logistics & storage facilities.</p> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="sector-card">
+                  <img src="img/sectors/hotel-1.jpg" alt="Hotels" />
+                  <div class="overlay">
+                    <span>Hotels</span>
+                    <!-- <p>Ensuring safety at large scale events.</p> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="sector-card">
+                  <img src="img/sectors/appartments-1.jpg" alt="Apartments" />
+                  <div class="overlay">
+                    <span>Apartments</span>
+                    <!-- <p>Protecting shopping centers & retail outlets.</p> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="sector-card">
+                  <img src="img/sectors/construction-security.png" alt="Construction Sites" />
+                  <div class="overlay">
+                    <span>Construction Sites</span>
+                    <!-- <p>Safety solutions for homes & residential areas.</p> -->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+         </section>
+            <footer class="footer">
+              <div class="container">
+                    <div class="row">
+                      <div class="col-xl-3 col-lg-4">
+                        <div class="logo wow fadeInUp" data-wow-delay="0.3s"> <img src="img/footer-logo.png" alt="Image"> </div>
+                        <!-- end logo -->
+                        <div class="footer-info wow fadeInUp" data-wow-delay="0.4s">
+                            <p><i class="flaticon-call iconpfooter"></i>&nbsp;&nbsp;&nbsp;07706 195111</p><br>
+                            <div class="bosluk04"></div>
+                            <p><i class="flaticon-email iconpfooter"></i>&nbsp;&nbsp;&nbsp;Security@fitsquad.uk</p><br>
+                            <p><i class="flaticon-location iconpfooter"></i>128 City Rd, London EC1V 2NX, UK</p>
+                        </div>
+                        <!-- end footer-info -->
+                        <ul class="footer-social wow fadeInUp" data-wow-delay="0.5s">
+                            <li><a href="#"><img width="25" height="25" src="img/facebook.png" alt="Facebook"></a></li>
+                            <li><a href="#"><img width="25" height="25" src="img/instagram2.png" alt="Instagram"></a></li>
+                        </ul>
+                      </div>
+                      <!-- end col-3 -->
+                      <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <h6 class="widget-title">Fit Squad - Security & Protection Service</h6>
+                        <p class="footerp">
+                            With our extensive experience, we operate across a wide range of sectors, providing professional security services for medical centres, residential and commercial properties, events and corporate facilities ensuring tailored protection for every client’s needs.
+                        </p><br>
+
+                        <a href="contact-us.html" class="custom-button">CONTACT US</a> </div>
+                      <!-- end col-4 -->
+                      <div class="col-lg-2 offset-xl-1 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <h6 class="widget-title">Services</h6>
+                        <ul class="footer-menu">
+                            <li><a href="services/security-guard.html">Security Guard</a></li>
+                            <li><a href="services/cctv-surveillance.html">CCTV Surveillance</a></li>
+                            <li><a href="services/corporate-security.html">Corporate Security</a></li>
+                            <li><a href="services/event-security.html">Event Security</a></li>
+                            <li><a href="services/vehicle-petrol.html">Vehicle Petrol</a></li>
+                            <li><a href="services/key-holding.html">Key Holding</a></li>
+                            <li><a href="services/private-property-security.html">Private Property Security</a></li>
+                            <li><a href="services/k9-security.html">K9 Security</a></li>
+                            <li><a href="services/construction-security.html">Construction Security</a></li>
+                        </ul>
+                      </div>
+                      <!-- end col-2 -->
+                      <div class="col-lg-2 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+                        <h6 class="widget-title">Quick Links</h6>
+                        <ul class="footer-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about-us.html">Who Are We</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                      </div>
+                      <!-- end col-2 -->
+                      <div class="col-12 wow fadeInUp" data-wow-delay="0.9s">
+                        <p class="copyright">© 2026 FSMS - All Rights Reserved.</p>
+                      </div>
+                      <!-- end col-12 --> 
+                    </div>
+                    <!-- end row --> 
+                  </div>
+                <div id="top" style="cursor: pointer;">
+                    <img width="50" height="50" src="img/go-top.png" alt=""/>
+                </div>
+              <script src="js/team.js"></script>
+              <script src="js/jquery.min.js"></script> 
+              <script src="js/bootstrap.min.js"></script> 
+              <script src="js/fancybox.min.js"></script> 
+              <script src="js/swiper.min.js"></script> 
+              <script src="js/odometer.min.js"></script> 
+              <script src="js/wow.min.js"></script> 
+              <script src="js/scripts.js"></script>
+              <script src="js/3d.jquery.js"></script>
+              <script src="js/pointer.js"></script>
+              <!--Cursor Script-->                    
+              <script>
+                  init_pointer({
+                      
+                  })
+              </script>
+          </footer>
+  </body>
+</html>
