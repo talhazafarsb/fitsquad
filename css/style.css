@@ -20,6 +20,25 @@
 html, body {
     overflow-x: hidden;
 }
+.season_content {
+    display: none;
+}
+
+/* Show content when tab is checked */
+.season_tab input:checked + label + .season_content {
+    display: block;
+}
+
+/* Mobile specific behavior */
+@media (max-width: 768px) {
+    .season_content {
+        display: none;
+    }
+
+    .season_tab input:checked + label + .season_content {
+        display: block;
+    }
+}
 /*custimzed css end*/
 @import url("https://fonts.googleapis.com/css2?family=Barlow&amp;display=swap");
 .h-yazi-ortalama {
