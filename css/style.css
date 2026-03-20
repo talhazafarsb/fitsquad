@@ -12071,7 +12071,7 @@ ul li ul li {
     -ms-transition: all .35s ease-in-out;
     -o-transition: all .35s ease-in-out;
     transition: all .35s ease-in-out;
-    background: #fff;
+    background: #ffffff5e;
     border-color: transparent;
     border-radius: 0.3rem; }
     .slider .button-prev:hover {
@@ -12095,11 +12095,11 @@ ul li ul li {
     -ms-transition: all .35s ease-in-out;
     -o-transition: all .35s ease-in-out;
     transition: all .35s ease-in-out;
-    background: #fff;
+    background: #ffffff5e;
     border-color: transparent;
     border-radius: 0.3rem; }
     .slider .button-next:hover {
-      background: #f3f3f3;
+      background: #ffffff5e;
       border-color: transparent;
       border-radius: 0.3rem; }
 
