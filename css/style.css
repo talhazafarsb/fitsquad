@@ -16,6 +16,11 @@
 1000 ve üzeri: Büyük masaüstü
 1200 - 1800  : Normal stiller için
 */
+/*custimzed css*/
+html, body {
+    overflow-x: hidden;
+}
+/*custimzed css end*/
 @import url("https://fonts.googleapis.com/css2?family=Barlow&amp;display=swap");
 .h-yazi-ortalama {
   text-align: center; }
