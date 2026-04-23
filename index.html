@@ -16,6 +16,59 @@
         <title>Security Guard Services Company - Fit Squad Security</title>
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <meta name="description" content="We Do Security Service, Questioning and Researching Studies.">
+        <style>
+            .swiper-slide {
+              height: auto;
+            }
+
+            .swiper-wrapper {
+              align-items: stretch; /* key line — stretches all slides to tallest one */
+            }
+
+            /* Make the card fill the full slide height */
+            .paketler,
+            .hizmet-kutu,
+            .kutu-duzen {
+              height: 100%;
+            }
+            .kutu-duzen {
+              display: flex;
+              flex-direction: column;
+              height: 100%;
+            }
+
+            /* Push the paragraph to the bottom so icons stay aligned */
+            .kutu-duzen p {
+              margin-top: auto;
+            }
+            .hizmet-kutu .kutu-duzen .icon-box .border-layer,
+            .hizmet-kutu .kutu-duzen .icon-box .border-layer:before {
+                display: none;
+            }
+            @media only screen and (max-width: 767px) {
+                .slider .button-prev,
+                .slider .button-next {
+                    display: block !important;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 18px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: rgba(0, 0, 0, 0.5);
+                    border-radius: 50%;
+                    z-index: 10;
+                }
+
+                .slider .button-prev {
+                    left: 10px;
+                }
+
+                .slider .button-next {
+                    right: 10px;
+                }
+            }
+        </style>
     </head>
     <body>
         <div class="loadwraps">
@@ -301,115 +354,89 @@
             
 
             <!-- Why Choose Section end -->
-            <!-- remove about us section -->
-<section class="tabs">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="season_tabs">
-                        <div class="season_tab">
-                            <input type="radio" id="tab-1" name="tab-group-1" checked>
-                            <label for="tab-1">About Us</label>
-                            <div class="season_content">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-5">
-                                            <img src="img/about-us1.jpg" alt="">
-                                        </div>
-                                        <div class="col-lg-7">
-                                            <p class="listtext">
-                                                Fit Squad Security is a UK-based professional security company built around the owner’s experience in a wide range of security roles, from unarmed guarding to event security and CCTV operations. The business started with a goal to provide affordable, reliable security while treating both clients and staff with respect, and has grown into a dedicated team of qualified security professionals.
-                                            </p>
 
-                                            <!-- <div class="bosluk3"></div>
-                                            <p class="listtext">- Competent in all areas of security systems,</p>
-                                            <p class="listtext">- Reputable with its successful and reliable features,</p>
-                                            <p class="listtext">- Making optimum use of emerging technologies,</p>
-                                            <p class="listtext">- Caring about consumer rights and satisfaction,</p>
-                                            <p class="listtext">- Aware of their responsibilities</p> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                        <div class="season_tab">
-                            <input type="radio" id="tab-2" name="tab-group-1">
-                            <label for="tab-2">Our Mission</label>
-                            <div class="season_content">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-5">
-                                            <img src="img/about-us2.jpg" alt="">
-                                        </div>
-                                        <div class="col-lg-7">
-                                            <p class="listtext">
-                                                Our mission is to deliver high-quality, dependable security services tailored to the needs of each client, ensuring safety for people, property and events with professionalism, integrity, and a responsive approach. We strive to make top-tier security accessible without overcharging clients or undervaluing our guards.
-                                            </p>
-                                            <!-- <div class="bosluk3"></div>
-                                            <p class="listtext">- Competent in all areas of security systems,</p>
-                                            <p class="listtext">- Reputable with its successful and reliable features,</p>
-                                            <p class="listtext">- Making optimum use of emerging technologies,</p>
-                                            <p class="listtext">- Caring about consumer rights and satisfaction,</p>
-                                            <p class="listtext">- Aware of their responsibilities</p> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                        <div class="season_tab">
-                            <input type="radio" id="tab-3" name="tab-group-1">
-                            <label for="tab-3">Our Vision</label>
-                            <div class="season_content">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-5">
-                                            <img src="img/about-us3.jpg" alt="">
-                                        </div>
-                                        <div class="col-lg-7">
-                                            <p class="listtext">
-                                                We envision becoming a trusted security partner across industries, known for dependable protection, cost-effective solutions, and a team that consistently goes beyond expectations to safeguard what matters to our clients.
-                                            </p>
-                                            <!-- <div class="bosluk3"></div>
-                                            <p class="listtext">- Competent in all areas of security systems,</p>
-                                            <p class="listtext">- Reputable with its successful and reliable features,</p>
-                                            <p class="listtext">- Making optimum use of emerging technologies,</p>
-                                            <p class="listtext">- Caring about consumer rights and satisfaction,</p>
-                                            <p class="listtext">- Aware of their responsibilities</p> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                        <div class="season_tab">
-                            <input type="radio" id="tab-4" name="tab-group-1">
-                            <label for="tab-4">Our Values</label>
-                            <div class="season_content">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-5">
-                                            <img src="img/about-us4.jpg" alt="">
-                                        </div>
-                                        <div class="col-lg-7">
-                                            <p class="listtext">
-                                                We are guided by respect for both clients and employees, a commitment to ethical and transparent service, and a focus on professionalism and accountability in everything we do. Our values ensure that every engagement prioritises safety, integrity, and quality
-                                            </p>
-                                            <!-- <div class="bosluk3"></div>
-                                            <p class="listtext">- Competent in all areas of security systems,</p>
-                                            <p class="listtext">- Reputable with its successful and reliable features,</p>
-                                            <p class="listtext">- Making optimum use of emerging technologies,</p>
-                                            <p class="listtext">- Caring about consumer rights and satisfaction,</p>
-                                            <p class="listtext">- Aware of their responsibilities</p> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
+            <!-- locations section                 -->
+
+            <section class="locations-section wow fadeInUp" data-wow-delay="0.3s">
+ 
+              <div class="container">
+                <div class="h-yazi-ortalama h-yazi-margin-orta-3">
+                  <h2 class="h2-baslik-hizmetler-21">
+                    Our Locations <strong style="font-size:5rem;color:#ffffff;">?</strong>
+                  </h2>
                 </div>
-            </div>
-        </div>
-    </div>
-    </section>
+              </div>
+             
+              <div class="bosluk3"></div>
+             
+              <div class="swiper locationsSwiper" style="max-width:1200px;margin:0 auto;padding:0 56px;">
+                <div class="swiper-wrapper">
+             
+                  <!-- SLIDE 1 – London & Surroundings -->
+                  <div class="swiper-slide">
+                    <a
+                      data-fancybox="locations-gallery"
+                      data-src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1600&q=90&auto=format&fit=crop"
+                      data-caption="<strong>London &amp; Surroundings</strong> — Thames · Greenwich · Windsor · Canary Wharf"
+                      href="javascript:void(0)"
+                      class="loc-card"
+                    >
+                      <div class="loc-card__bg"
+                        style="background-image:url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=900&q=80&auto=format&fit=crop');"></div>
+                      <div class="loc-card__overlay"></div>
+                      <div class="loc-card__body">
+                        <h3 class="loc-card__title">London &amp;<br>Surroundings</h3>
+                      </div>
+                    </a>
+                  </div>
+             
+                  <!-- SLIDE 2 – Manchester -->
+                  <div class="swiper-slide">
+                    <a
+                      data-fancybox="locations-gallery"
+                      data-src="https://images.unsplash.com/photo-1555696958-c5049b866f6f?w=1600&q=90&auto=format&fit=crop"
+                      data-caption="<strong>Manchester</strong> — Castlefield · Ancoats · MediaCityUK · Spinningfields"
+                      href="javascript:void(0)"
+                      class="loc-card"
+                    >
+                      <div class="loc-card__bg"
+                        style="background-image:url('https://images.unsplash.com/photo-1555696958-c5049b866f6f?w=900&q=80&auto=format&fit=crop');"></div>
+                      <div class="loc-card__overlay"></div>
+                      <div class="loc-card__body">
+                        <h3 class="loc-card__title">Manchester</h3>
+                      </div>
+                    </a>
+                  </div>
+             
+                  <!-- SLIDE 3 – Birmingham -->
+                  <div class="swiper-slide">
+                    <a
+                      data-fancybox="locations-gallery"
+                      data-src="/img/birmingham-1.jpg"
+                      data-caption="<strong>Birmingham</strong> — Bullring · Digbeth · Jewellery Quarter · Grand Central"
+                      href="javascript:void(0)"
+                      class="loc-card"
+                    >
+                      <div class="loc-card__bg"
+                        style="background-image:url('img/birmingham-1.jpg');"></div>
+                      <div class="loc-card__overlay"></div>
+                      <div class="loc-card__body">
+                        <h3 class="loc-card__title">Birmingham</h3>
+                      </div>
+                    </a>
+                  </div>
+             
+                </div><!-- /.swiper-wrapper -->
+             
+                <div class="loc-swiper-prev">&#10094;</div>
+                <div class="loc-swiper-next">&#10095;</div>
+                <div class="loc-pagination"></div>
+              </div>
+             
+            </section>
+
+            <!-- Locations Section End -->
+
             <!--Service Alanı-->
            <!-- <section class="services1 wow fadeInUp" data-wow-delay="0.3s">
             <div class="container">
@@ -592,6 +619,7 @@
                 </div>
             </section> -->
 
+
             <!-- what we are doing start -->
 
             <section class="services1 what-we-doing-section wow fadeInUp" data-wow-delay="0.3s">
@@ -600,7 +628,7 @@
                         <div class="col-12">
                             <div class="h-yazi-ortalama h-yazi-margin-orta-3">
                                 <h2 class="h2-baslik-hizmetler-21">
-                                    What Are We Doing <strong style="font-size: 5rem; color: #ffffff;">?</strong>
+                                    Sectors <strong style="font-size: 5rem; color: #ffffff;">?</strong>
                                 </h2> 
                             </div>
                         </div>
@@ -790,7 +818,7 @@
             <!-- what we are doing end -->
            
          <!--Markalar Alanı-->
-        <section class="markalar wow fadeInUp" data-wow-delay="0.3s">
+        <!-- <section class="markalar wow fadeInUp" data-wow-delay="0.3s">
             <div class="h-yazi-ortalama h-yazi-margin-client">
                 <h2 class="h2-baslik-hizmetler-21 wow fadeInUp" data-wow-delay="0.4s"> Those Who Prefer Us <strong style="font-size: 5rem; color: #ffffff;">?</strong> </h2> 
                 <div class="bosluk3"></div>
@@ -799,9 +827,51 @@
                 <img src="img/prefered-us/prop80.png" alt="Marka 1" class="marka">
                 <img src="img/prefered-us/desi-urban.avif" alt="Marka 2" class="marka">
             </div>
-        </section>   
+        </section>  -->  
+        <!-- count section -->
+
+        <section class="content-section" data-background="#fafafa" style="background: rgb(250, 250, 250);">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                   <div class="icon"><i class="flaticon-team"></i></div>
+                  <div class="counter-box wow fade animated" style="visibility: visible;">
+                    <span class="odometer odometer-auto-theme" data-count="10" data-status="yes"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">2</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">4</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span>
+                    <h6>Years in service</h6>
+                  </div>
+                </div>
+                <!-- end col-4 -->
+                <div class="col-lg-3 col-md-6 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                    <div class="icon"><i class="flaticon-group"></i></div>
+                  <div class="counter-box wow fade animated" style="visibility: visible;">
+                    <span class="odometer odometer-auto-theme" data-count="100" data-status="yes"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">2</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">6</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span>
+                    <h6>Clients Served</h6>
+                  </div>
+                </div>
+                <!-- end col-4 -->
+                <div class="col-lg-3 col-md-6 wow fadeInRight" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInRight;">
+                    <div class="icon"><i class="flaticon-badge"></i></div>
+                  <div class="counter-box wow fade animated" style="visibility: visible;">
+                    <span class="odometer odometer-auto-theme" data-count="4.8" data-status="yes"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">8</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span>
+                    <h6>Customer's Feedback</h6>
+                  </div>
+                </div>
+                <!-- end col-4 -->
+                <div class="col-lg-3 col-md-6 wow fadeInRight" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInRight;">
+                    <div class="icon"><i class="flaticon-team-1"></i></div>
+                    <div class="counter-box wow fade animated" style="visibility: visible;">
+                      <span class="odometer odometer-auto-theme" data-count="0" data-status="yes"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">2</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">8</span></span></span></span></span></div></span>
+                      <h6>Missed Clients</h6>
+                    </div>
+                  </div>
+                  <!-- end col-4 -->  
+              </div>
+            </div>
+          </section>
+
+        <!-- end count section -->
         <!--Yorumlar-->
-        <section class="yorumlar-alani-sayfa wow fadeInUp" data-wow-delay="0.3s">
+        <!-- <section class="yorumlar-alani-sayfa wow fadeInUp" data-wow-delay="0.3s">
         <div class="container">
             <div class="row">
             <div class="col-12">
@@ -828,7 +898,7 @@
                             </div>
                             </div>
                             </div>
-                            <!-- end swiper-slide -->
+                            
                     <div class="swiper-slide wow fadeInLeft" data-wow-delay="0.6s">
                         <div class="class-box">
                         <div class="testimonial-card">
@@ -844,7 +914,7 @@
                             </div>
                         </div>
                             </div>
-                            <!-- end swiper-slide -->
+                            
                     <div class="swiper-slide wow fadeInRight" data-wow-delay="0.7s">
                         <div class="class-box">
                         <div class="testimonial-card">
@@ -860,7 +930,7 @@
                             </div>
                         </div>
                             </div>
-                            <!-- end swiper-slide -->
+                            
                     <div class="swiper-slide wow fadeInRight" data-wow-delay="0.8s">
                         <div class="class-box">
                         <div class="testimonial-card">
@@ -876,17 +946,17 @@
                             </div>
                             </div>
                             </div>
-                            <!-- end swiper-slide -->
+                            
                     </div>
-                    <!-- end swiper-wrapper -->
+                    
                     <div class="swiper-pagination"></div>
-                    <!-- end swiper-pagination -->
+                    
                     </div>
                 </div>
-                <!-- end col-12 -->
+                
             </div>
         </div>
-        </section>
+        </section> -->
             <div class="bosluk3"></div>                        
             
             <!--Footer Alanı-->
@@ -967,6 +1037,38 @@
                     init_pointer({
                         
                     })
+                </script>
+                <script>
+                    (function () {
+                      var locSwiper = new Swiper('.locationsSwiper', {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                        loop: true,
+                        autoplay: { delay: 4500, disableOnInteraction: false },
+                        speed: 850,
+                        navigation: {
+                          nextEl: '.loc-swiper-next',
+                          prevEl: '.loc-swiper-prev',
+                        },
+                        pagination: {
+                          el: '.loc-pagination',
+                          clickable: true,
+                        },
+                        breakpoints: {
+                          640:  { slidesPerView: 2, spaceBetween: 18 },
+                          1024: { slidesPerView: 3, spaceBetween: 24 },
+                        },
+                      });
+                     
+                      if (typeof $.fancybox !== 'undefined') {
+                        $('[data-fancybox="locations-gallery"]').fancybox({
+                          loop: true,
+                          buttons: ['zoom', 'slideShow', 'fullScreen', 'close'],
+                          animationEffect: 'fade',
+                          transitionEffect: 'slide',
+                        });
+                      }
+                    })();
                 </script>
             </footer>
     </body>
