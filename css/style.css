@@ -14732,7 +14732,7 @@ p.countb {
   background-image: url(../img/footer-bg.jpg);
   background-size: cover; }
   .footer .logo {
-    width: 100%;
+    /*width: 100%;*/
     display: block;
     margin-bottom: 30px; }
     .footer .logo img {

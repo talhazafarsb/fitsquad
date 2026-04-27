@@ -68,41 +68,10 @@
                     right: 10px;
                 }
             }
-            .footer .footer-bottom-row {
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
-            }
-
-            .footer .footer-social-col {
-                display: flex;
-                justify-content: center;
-            }
-
-            .footer .footer-copyright-col {
-                display: flex;
-                justify-content: center;
-            }
-
-            @media (min-width: 768px) {
-                .footer .footer-social-col {
-                    justify-content: flex-start !important;
-                }
-                .footer .footer-copyright-col {
-                    justify-content: flex-end !important;
-                }
-            }
-            .footer .footer-contact p {
-                text-align: center !important;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 8px;
-            }
-
-            .footer .footer-contact .iconpfooter {
-                float: none !important;
-                font-size: 18px;
+            @media (max-width: 767px) {
+                .footer p {
+                    font-size: 3rem;
+                } 
             }
 
         </style>
@@ -1004,50 +973,50 @@
             
             <!--Footer Alanı-->
             <footer class="footer">
-    <div class="container">
+                <div class="container">
 
-        <!-- Logo -->
-        <div class="row">
-            <div class="col-12 text-center mb-3">
-                <div class="logo wow fadeInUp" data-wow-delay="0.3s">
-                    <img src="img/footer-logo.png" alt="Image">
+                    <!-- Logo -->
+                    <div class="row d-flex flex-column align-items-md-center align-items-start footer-logo">
+                        <div class="col-12 text-center mb-3 d-flex flex-column align-items-md-center align-items-start">
+                            <div class="logo wow fadeInUp" data-wow-delay="0.3s">
+                                <img src="img/footer-logo.png" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="row footer-contact mb-3">
+                        <div class="col-md-4 col-12 mb-2 text-md-center text-start">
+                            <p><i class="flaticon-call iconpfooter"></i>&nbsp;&nbsp;&nbsp;07706 195111</p>
+                        </div>
+                        <div class="col-md-4 col-12 mb-2 text-md-center text-start">
+                            <p><i class="flaticon-email iconpfooter"></i>&nbsp;&nbsp;&nbsp;Security@fitsquad.uk</p>
+                        </div>
+                        <div class="col-md-4 col-12 mb-2 text-md-center text-start">
+                            <p><i class="flaticon-location iconpfooter"></i>&nbsp;128 City Rd, London EC1V 2NX, UK</p>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Row: Social | Empty | Copyright -->
+                    <div class="row align-items-center footer-bottom-row">
+
+                        <div class="col-md-4 col-12 footer-social-col mb-2 mb-md-0">
+                            <ul style="list-style:none; gap:12px; padding:0; margin:0;">
+                                <li><a href="#"><img width="25" height="25" src="img/facebook.png" alt="Facebook"></a></li>
+                                <li><a href="#"><img width="25" height="25" src="img/instagram2.png" alt="Instagram"></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 d-none d-md-block"></div>
+
+                        <div class="col-md-4 col-12 footer-copyright-col mb-2 mb-md-0">
+                            <p style="margin:0;">© 2026 FSMS - All Rights Reserved.</p>
+                        </div>
+
+                    </div>
+
                 </div>
-            </div>
-        </div>
-
-        <!-- Contact Info -->
-        <div class="row footer-contact mb-3">
-    <div class="col-md-4 col-12 mb-2 text-center">
-        <p><i class="flaticon-call iconpfooter"></i>&nbsp;&nbsp;&nbsp;07706 195111</p>
-    </div>
-    <div class="col-md-4 col-12 mb-2 text-center">
-        <p><i class="flaticon-email iconpfooter"></i>&nbsp;&nbsp;&nbsp;Security@fitsquad.uk</p>
-    </div>
-    <div class="col-md-4 col-12 mb-2 text-center">
-        <p><i class="flaticon-location iconpfooter"></i>&nbsp;128 City Rd, London EC1V 2NX, UK</p>
-    </div>
-</div>
-
-        <!-- Bottom Row: Social | Empty | Copyright -->
-        <div class="row align-items-center footer-bottom-row">
-
-            <div class="col-md-4 col-12 footer-social-col mb-2 mb-md-0">
-                <ul style="list-style:none; display:inline-flex; gap:12px; padding:0; margin:0;">
-                    <li><a href="#"><img width="25" height="25" src="img/facebook.png" alt="Facebook"></a></li>
-                    <li><a href="#"><img width="25" height="25" src="img/instagram2.png" alt="Instagram"></a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-4 d-none d-md-block"></div>
-
-            <div class="col-md-4 col-12 footer-copyright-col mb-2 mb-md-0">
-                <p style="margin:0;">© 2026 FSMS - All Rights Reserved.</p>
-            </div>
-
-        </div>
-
-    </div>
-</footer>
+            </footer>
 
 
 
@@ -1131,6 +1100,35 @@
                 <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
             <script src="https://elfsightcdn.com/platform.js" async></script>
             <script src="https://elfsightcdn.com/platform.js" async></script>
+            <script>
+    function hideElfsightLinks() {
+        const wrapper = document.querySelector('.eapp-slider-slider-inner-wrapper');
+        if (wrapper) {
+            const links = wrapper.querySelectorAll('a');
+            links.forEach(link => {
+                link.style.setProperty('display', 'none', 'important');
+            });
+        } else {
+            // Agar element abhi load nahi hua toh dobara try karo
+            setTimeout(hideElfsightLinks, 500);
+        }
+    }
+
+    // Page load hone ke baad run karo
+    window.addEventListener('load', function() {
+        setTimeout(hideElfsightLinks, 1000);
+    });
+
+    // MutationObserver se dynamically add hone wale elements bhi pakdo
+    const observer = new MutationObserver(function() {
+        hideElfsightLinks();
+    });
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+</script>
             </footer>
     </body>
 </html>
