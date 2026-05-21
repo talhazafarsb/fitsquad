@@ -14810,7 +14810,11 @@ p.countb {
         margin-right: 9px; }
       .footer .footer-menu li a {
         color: #fff; }
-
+@media (max-width: 767px) {
+  .footer p {
+    font-size: 3rem;
+  } 
+}        
 /* RESPONSIVE MEDIUM  */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
   .page-header {
