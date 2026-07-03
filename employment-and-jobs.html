@@ -15,54 +15,25 @@
         <title>Employment & Jobs - Fit Squad</title>
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <meta name="description" content="We Do Security Service, Questioning and Researching Studies.">
-        <style type="text/css">
-        .form__label {
-            display: block;
-            text-align: left !important;
-            margin: 0;
-            
-        }
-        /* Wrapper for the whole list */
-        .checkbox-group {
-            display: flex;
-            flex-direction: column;
-            gap: 10px; /* space between items */
-        }
-
-        /* Each checkbox row */
-        .form-check {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 6px 8px;
-            border-radius: 6px;
-            padding-left: 0;
-            cursor: pointer;
-            transition: background-color 0.2s ease;
-        }
-
-        /* Hover effect */
-        .form-check:hover {
-            background-color: #f5f5f5;
-        }
-
-        /* Checkbox */
-        .form-check-input {
-            margin: 0;
-            position: relative;
-            width: 16px;
-            height: 16px;
-            cursor: pointer;
-        }
-
-        /* Label */
-        .form-check-label {
-            margin: 0;
-            cursor: pointer;
-            font-size: 14px;
-        }
-        </style>
     </head>
+    <style>
+        :root{
+          /* pulled directly from style.css */
+          --bs-blue-1:#33c4e7;     /* h2-baslik-anasayfa gradient start */
+          --bs-blue-2:#0c52aa;     /* h2-baslik-anasayfa gradient end / link color (.paragraf a) */
+          --bs-ink:#292929;        /* buton--kirmizi, form__input border-bottom */
+          --bs-ink-2:#000000;      /* custom-button, navbar text, h2-baslik-anasayfa-ozel */
+          --bs-dark-3:#363636;     /* navbar-button, sidebar-service bg */
+          --bs-bg:#ffffff;         /* body background */
+          --bs-bg-soft:#fbfbfb;    /* hizmetler-alani gradient end */
+          --bs-card:#ffffff;
+          --bs-border:#e2e2e2;     /* services-kutu1 border-right */
+          --bs-muted:#616161;      /* body / .paragraf text color */
+          --bs-muted-2:#797979;    /* baslik-4--yazi */
+          --bs-danger:#c0392b;
+          --bs-radius:0.3rem;      /* common card radius across theme (.3rem) */
+        }
+    </style>
     <body>
       <div class="loadwraps">
         <div class="dot"></div>
@@ -179,227 +150,351 @@
         </header>
         <main>
             <section class="iletisim-form-alani">
-              <div class="container">
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="form__grup wow fadeInLeft" data-wow-delay="0.5s">
-                            <input type="text" class="form__input" placeholder="Full Name" id="txt_isim" name="name" required>
-                            <label for="name" class="form__label">Full Name</label>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="form__grup wow fadeInLeft" data-wow-delay="0.6s">
-                            <input type="text" class="form__input" placeholder="Enter City" id="txt_eposta" name="city" required>
-                            <label for="city" class="form__label">Email Your City</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="form__grup wow fadeInLeft" data-wow-delay="0.5s">
-                            <input type="text" class="form__input" placeholder="Enter Area of Residence" id="txt_isim" name="aor" required>
-                            <label for="name" class="form__label">Area of Residence</label>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="form__grup wow fadeInLeft" data-wow-delay="0.6s">
-                            <input type="text" class="form__input" placeholder="Enter Years of Experience" id="txt_eposta" name="yoe" required>
-                            <label for="city" class="form__label">Email Your City</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="form__grup wow fadeInLeft" data-wow-delay="0.7s">
-                            <label class="form__label">Type of Security Experience</label>
-                            
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="UnarmedGuard" name="tse[]" value="Unarmed Guard">
-                                <label class="form-check-label" for="UnarmedGuard">Unarmed Guard</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Corporate" name="tse[]" value="Corporate">
-                                <label class="form-check-label" for="Corporate">Corporate</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="VehiclePatrol" name="tse[]" value="Vehicle Patrol">
-                                <label class="form-check-label" for="VehiclePatrol">Vehicle Patrol</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Construction" name="tse[]" value="Construction">
-                                <label class="form-check-label" for="Construction">Construction</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="CCTVSurveillance" name="tse[]" value="CCTV Surveillance">
-                                <label class="form-check-label" for="CCTVSurveillance">CCTV Surveillance</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Events" name="tse[]" value="Events">
-                                <label class="form-check-label" for="Events">Events</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="StandingGuard" name="tse[]" value="Standing Guard">
-                                <label class="form-check-label" for="StandingGuard">Standing Guard</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="KeyHolding" name="tse[]" value="Key Holding">
-                                <label class="form-check-label" for="KeyHolding">Key Holding</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="DogHandling" name="tse[]" value="Dog Handling">
-                                <label class="form-check-label" for="DogHandling">Dog Handling</label>
-                            </div>
-
-                            <div class="form__grup mt-3">
-                                <input type="text" class="form__input" name="otherSpec" id="otherSpec" placeholder="Please specify if Other">
-                                <label for="otherSpec" class="form__label">Other</label>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="form__grup wow fadeInLeft" data-wow-delay="0.7s">
-                            <label class="form__label">Qualifications</label>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="DogHandlingQualification" name="htf[]" value="Dog Handling qualification">
-                                <label class="form-check-label" for="DogHandlingQualification">Dog Handling qualification</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="CCTVBadge" name="htf[]" value="CCTV badge">
-                                <label class="form-check-label" for="CCTVBadge">CCTV badge</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="CloseProtection">
-                                <label class="form-check-label" for="CloseProtection">Close Protection</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="FirstAidQualification" name="htf[]" value="First Aid qualification">
-                                <label class="form-check-label" for="FirstAidQualification">First Aid qualification</label>
-                            </div>
-
-                            <div class="form__grup mt-3">
-                                <input type="text" class="form__input" name="otherQualification" id="otherQualification" placeholder="Please specify if Other">
-                                <label for="otherQualification" class="form__label">Other</label>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="form__grup wow fadeInLeft" data-wow-delay="0.7s">
-                            <label class="form__label">
-                                Working Availability <sup style="color:red">*</sup>
-                            </label>
-
-                            <label class="form__label mt-3">
-                                Days <sup style="color:red">*</sup>
-                            </label>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Monday" name="workingDays[]" value="Monday">
-                                <label class="form-check-label" for="Monday">Monday</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Tuesday" name="workingDays[]" value="Tuesday">
-                                <label class="form-check-label" for="Tuesday">Tuesday</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Wednesday" name="workingDays[]" value="Wednesday">
-                                <label class="form-check-label" for="Wednesday">Wednesday</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Thursday" name="workingDays[]" value="Thursday">
-                                <label class="form-check-label" for="Thursday">Thursday</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Friday" name="workingDays[]" value="Friday">
-                                <label class="form-check-label" for="Friday">Friday</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Saturday" name="workingDays[]" value="Saturday">
-                                <label class="form-check-label" for="Saturday">Saturday</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Sunday" name="workingDays[]" value="Sunday">
-                                <label class="form-check-label" for="Sunday">Sunday</label>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="form__grup wow fadeInLeft" data-wow-delay="0.8s">
-
-                            <label class="form__label">
-                                Time <sup style="color:red">*</sup>
-                            </label>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Morning" name="workingTime[]" value="Morning">
-                                <label class="form-check-label" for="Morning">Morning</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Afternoon" name="workingTime[]" value="Afternoon">
-                                <label class="form-check-label" for="Afternoon">Afternoon</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Evening" name="workingTime[]" value="Evening">
-                                <label class="form-check-label" for="Evening">Evening</label>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="form__grup wow fadeInLeft" data-wow-delay="0.7s">
-                            <label for="siaLicense" class="form__label">
-                                SIA License <sup style="color:red">*</sup>
-                            </label>
-                            <input type="file" class="form__input" name="siaLicense" id="siaLicense">
-                        </div>
-                    </div>
-
-                    <div class="col-sm">
-                        <div class="form__grup wow fadeInLeft" data-wow-delay="0.8s">
-                            <label for="cv" class="form__label">
-                                CV (Optional)
-                            </label>
-                            <input type="file" class="form__input" name="cv" id="cv">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
                 <div class="container">
-                  <div class="row">
-                    <div class="col-sm">
-                      <div class="form__grup wow fadeInUp" data-wow-delay="0.9s">
-                          <button class="buton-contact buton-contact--kirmizi"  id="btn_Gonder">SEND</button>
+                  <ul class="bs-steps" id="bsSteps">
+                    <li class="bs-step is-active" data-step="0"><div class="bs-step__dot">1</div><div class="bs-step__label">Personal</div></li>
+                    <li class="bs-step" data-step="1"><div class="bs-step__dot">2</div><div class="bs-step__label">Addresses</div></li>
+                    <li class="bs-step" data-step="2"><div class="bs-step__dot">3</div><div class="bs-step__label">Employment</div></li>
+                    <li class="bs-step" data-step="3"><div class="bs-step__dot">4</div><div class="bs-step__label">Identity</div></li>
+                    <li class="bs-step" data-step="4"><div class="bs-step__dot">5</div><div class="bs-step__label">Disclosure</div></li>
+                    <li class="bs-step" data-step="5"><div class="bs-step__dot">6</div><div class="bs-step__label">References</div></li>
+                    <li class="bs-step" data-step="6"><div class="bs-step__dot">7</div><div class="bs-step__label">Emergency</div></li>
+                    <li class="bs-step" data-step="7"><div class="bs-step__dot">8</div><div class="bs-step__label">Declare</div></li>
+                    <div class="bs-steps__fill" id="bsStepsFill"></div>
+                  </ul>
+
+                      <div class="bs-card">
+                        <form id="bs7858Form" novalidate>
+
+                          <!-- STEP 1 : PERSONAL DETAILS -->
+                          <div class="bs-panel is-active" data-panel="0">
+                            <h2 class="bs-panel__title">1. Personal Details</h2>
+                            <p class="bs-panel__hint">Your legal name as it appears on official identity documents.</p>
+
+                            <div class="bs-grid">
+                              <div class="bs-field">
+                                <label>Title<span class="req">*</span></label>
+                                <select class="bs-select" name="title" required>
+                                  <option value="">Select</option>
+                                  <option>Mr</option><option>Mrs</option><option>Miss</option>
+                                  <option>Ms</option><option>Mx</option><option>Other</option>
+                                </select>
+                                <span class="bs-error-text">Please select a title.</span>
+                              </div>
+                              <div class="bs-field">
+                                <label>Date of Birth<span class="req">*</span></label>
+                                <input class="bs-input" type="date" name="dob" required>
+                                <span class="bs-error-text">Date of birth is required.</span>
+                              </div>
+                              <div class="bs-field">
+                                <label>First Name<span class="req">*</span></label>
+                                <input class="bs-input" type="text" name="first_name" required>
+                                <span class="bs-error-text">First name is required.</span>
+                              </div>
+                              <div class="bs-field">
+                                <label>Middle Name(s)</label>
+                                <input class="bs-input" type="text" name="middle_name">
+                              </div>
+                              <div class="bs-field">
+                                <label>Surname<span class="req">*</span></label>
+                                <input class="bs-input" type="text" name="surname" required>
+                                <span class="bs-error-text">Surname is required.</span>
+                              </div>
+                              <div class="bs-field">
+                                <label>Former / Maiden Name(s)</label>
+                                <input class="bs-input" type="text" name="former_name" placeholder="If applicable">
+                              </div>
+                              <div class="bs-field">
+                                <label>Gender</label>
+                                <select class="bs-select" name="gender">
+                                  <option value="">Select</option>
+                                  <option>Male</option><option>Female</option>
+                                  <option>Non-binary</option><option>Prefer not to say</option>
+                                </select>
+                              </div>
+                              <div class="bs-field">
+                                <label>Place of Birth (Town/City &amp; Country)<span class="req">*</span></label>
+                                <input class="bs-input" type="text" name="birth_place" required>
+                                <span class="bs-error-text">Place of birth is required.</span>
+                              </div>
+                              <div class="bs-field">
+                                <label>National Insurance Number<span class="req">*</span></label>
+                                <input class="bs-input" type="text" name="ni_number" placeholder="QQ 12 34 56 C" required>
+                                <span class="bs-error-text">National Insurance number is required.</span>
+                              </div>
+                              <div class="bs-field">
+                                <label>Nationality<span class="req">*</span></label>
+                                <input class="bs-input" type="text" name="nationality" required>
+                                <span class="bs-error-text">Nationality is required.</span>
+                              </div>
+                              <div class="bs-field">
+                                <label>Mobile Number<span class="req">*</span></label>
+                                <input class="bs-input" type="tel" name="mobile" required>
+                                <span class="bs-error-text">Mobile number is required.</span>
+                              </div>
+                              <div class="bs-field">
+                                <label>Email Address<span class="req">*</span></label>
+                                <input class="bs-input" type="email" name="email" required>
+                                <span class="bs-error-text">A valid email is required.</span>
+                              </div>
+                              <div class="bs-field">
+                                <label>Position Applied For<span class="req">*</span></label>
+                                <input class="bs-input" type="text" name="position_applied" required>
+                                <span class="bs-error-text">Please tell us which role you're applying for.</span>
+                              </div>
+                              <div class="bs-field">
+                                <label>SIA Licence Number (if held)</label>
+                                <input class="bs-input" type="text" name="sia_licence">
+                              </div>
+                              <div class="bs-field">
+                                <label>SIA Licence Expiry</label>
+                                <input class="bs-input" type="date" name="sia_expiry">
+                              </div>
+                              <div class="bs-field">
+                                <label>SIA Licence Sector(s)</label>
+                                <input class="bs-input" type="text" name="sia_sector" placeholder="e.g. Door Supervision, CCTV">
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- STEP 2 : ADDRESS HISTORY -->
+                          <div class="bs-panel" data-panel="1">
+                            <h2 class="bs-panel__title">2. Address History</h2>
+                            <p class="bs-panel__hint">List every address you have lived at over the last 5 years, starting with your current address. Cover the full period with no gaps.</p>
+
+                            <div id="addressRepeater" class="bs-repeater"></div>
+                            <button type="button" class="bs-add-btn" id="addAddressBtn">+ Add Another Address</button>
+                            <div class="bs-gap-warning" id="addressGapWarning"></div>
+                          </div>
+
+                          <!-- STEP 3 : EMPLOYMENT / ACTIVITY HISTORY -->
+                          <div class="bs-panel" data-panel="2">
+                            <h2 class="bs-panel__title">3. Employment &amp; Activity History</h2>
+                            <p class="bs-panel__hint">Cover the last 5 years in full. Include employment, self-employment, education, unemployment, travel or any other activity. Any gap over 31 days must be explained.</p>
+
+                            <div id="employmentRepeater" class="bs-repeater"></div>
+                            <button type="button" class="bs-add-btn" id="addEmploymentBtn">+ Add Another Period</button>
+                            <div class="bs-gap-warning" id="employmentGapWarning"></div>
+                          </div>
+
+                          <!-- STEP 4 : IDENTITY & RIGHT TO WORK -->
+                          <div class="bs-panel" data-panel="3">
+                            <h2 class="bs-panel__title">4. Identity &amp; Right to Work</h2>
+                            <p class="bs-panel__hint">Provide details of the identity documents you will present for verification (originals required at interview).</p>
+
+                            <fieldset>
+                              <legend>Primary Identity Document</legend>
+                              <div class="bs-grid">
+                                <div class="bs-field">
+                                  <label>Document Type<span class="req">*</span></label>
+                                  <select class="bs-select" name="id1_type" required>
+                                    <option value="">Select</option>
+                                    <option>Passport</option>
+                                    <option>UK Driving Licence (Photocard)</option>
+                                    <option>National Identity Card</option>
+                                    <option>Biometric Residence Permit</option>
+                                  </select>
+                                  <span class="bs-error-text">Please select a document type.</span>
+                                </div>
+                                <div class="bs-field">
+                                  <label>Document Number<span class="req">*</span></label>
+                                  <input class="bs-input" type="text" name="id1_number" required>
+                                  <span class="bs-error-text">Document number is required.</span>
+                                </div>
+                                <div class="bs-field">
+                                  <label>Issuing Country<span class="req">*</span></label>
+                                  <input class="bs-input" type="text" name="id1_country" required>
+                                  <span class="bs-error-text">Issuing country is required.</span>
+                                </div>
+                                <div class="bs-field">
+                                  <label>Expiry Date<span class="req">*</span></label>
+                                  <input class="bs-input" type="date" name="id1_expiry" required>
+                                  <span class="bs-error-text">Expiry date is required.</span>
+                                </div>
+                              </div>
+                            </fieldset>
+
+                            <fieldset>
+                              <legend>Secondary Identity / Proof of Address Document</legend>
+                              <div class="bs-grid">
+                                <div class="bs-field">
+                                  <label>Document Type<span class="req">*</span></label>
+                                  <select class="bs-select" name="id2_type" required>
+                                    <option value="">Select</option>
+                                    <option>Utility Bill (last 3 months)</option>
+                                    <option>Bank/Building Society Statement</option>
+                                    <option>Council Tax Bill</option>
+                                    <option>Birth Certificate</option>
+                                    <option>Marriage / Civil Partnership Certificate</option>
+                                    <option>HMRC Document</option>
+                                  </select>
+                                  <span class="bs-error-text">Please select a document type.</span>
+                                </div>
+                                <div class="bs-field">
+                                  <label>Document Reference / Number</label>
+                                  <input class="bs-input" type="text" name="id2_number">
+                                </div>
+                                <div class="bs-field">
+                                  <label>Document Date</label>
+                                  <input class="bs-input" type="date" name="id2_date">
+                                </div>
+                              </div>
+                            </fieldset>
+
+                            <fieldset>
+                              <legend>Right to Work</legend>
+                              <div class="bs-field">
+                                <label>Do you have the right to work in the UK?<span class="req">*</span></label>
+                                <div class="bs-radio-row">
+                                  <label class="bs-radio"><input type="radio" name="right_to_work" value="yes" required> Yes</label>
+                                  <label class="bs-radio"><input type="radio" name="right_to_work" value="no"> No</label>
+                                </div>
+                                <span class="bs-error-text">Please confirm your right to work status.</span>
+                              </div>
+                              <div class="bs-field" style="margin-top:1.6rem;">
+                                <label>Visa / Permit Reference (if applicable)</label>
+                                <input class="bs-input" type="text" name="visa_reference">
+                              </div>
+                            </fieldset>
+                          </div>
+
+                          <!-- STEP 5 : DISCLOSURE / DECLARATION -->
+                          <div class="bs-panel" data-panel="4">
+                            <h2 class="bs-panel__title">5. Criminal Record &amp; Financial Disclosure</h2>
+                            <p class="bs-panel__hint">Answer honestly. Disclosure does not automatically disqualify you &mdash; each case is assessed individually and proportionately.</p>
+
+                            <div class="bs-grid">
+                              <div class="bs-field span-2">
+                                <label>Have you ever been convicted of a criminal offence (including spent convictions where disclosable)?<span class="req">*</span></label>
+                                <div class="bs-radio-row">
+                                  <label class="bs-radio"><input type="radio" name="convicted" value="yes" required> Yes</label>
+                                  <label class="bs-radio"><input type="radio" name="convicted" value="no"> No</label>
+                                </div>
+                                <span class="bs-error-text">Please answer this question.</span>
+                              </div>
+                              <div class="bs-field span-2">
+                                <label>If yes, please provide details (offence, date, sentence)</label>
+                                <textarea class="bs-textarea" name="convicted_details"></textarea>
+                              </div>
+                              <div class="bs-field span-2">
+                                <label>Are there any criminal proceedings pending against you?<span class="req">*</span></label>
+                                <div class="bs-radio-row">
+                                  <label class="bs-radio"><input type="radio" name="pending" value="yes" required> Yes</label>
+                                  <label class="bs-radio"><input type="radio" name="pending" value="no"> No</label>
+                                </div>
+                                <span class="bs-error-text">Please answer this question.</span>
+                              </div>
+                              <div class="bs-field span-2">
+                                <label>Have you ever been declared bankrupt, or are you subject to any County Court Judgments (CCJs) or an Individual Voluntary Arrangement (IVA)?<span class="req">*</span></label>
+                                <div class="bs-radio-row">
+                                  <label class="bs-radio"><input type="radio" name="financial" value="yes" required> Yes</label>
+                                  <label class="bs-radio"><input type="radio" name="financial" value="no"> No</label>
+                                </div>
+                                <span class="bs-error-text">Please answer this question.</span>
+                              </div>
+                              <div class="bs-field span-2">
+                                <label>If yes, please provide details</label>
+                                <textarea class="bs-textarea" name="financial_details"></textarea>
+                              </div>
+                              <div class="bs-field span-2">
+                                <label>Have you ever been dismissed from any employment, or asked to resign?<span class="req">*</span></label>
+                                <div class="bs-radio-row">
+                                  <label class="bs-radio"><input type="radio" name="dismissed" value="yes" required> Yes</label>
+                                  <label class="bs-radio"><input type="radio" name="dismissed" value="no"> No</label>
+                                </div>
+                                <span class="bs-error-text">Please answer this question.</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- STEP 6 : REFERENCES -->
+                          <div class="bs-panel" data-panel="5">
+                            <h2 class="bs-panel__title">6. Character References</h2>
+                            <p class="bs-panel__hint">Please provide two references who are not related to you and have known you for at least two years.</p>
+
+                            <div id="referenceRepeater" class="bs-repeater"></div>
+                          </div>
+
+                          <!-- STEP 7 : EMERGENCY CONTACT -->
+                          <div class="bs-panel" data-panel="6">
+                            <h2 class="bs-panel__title">7. Emergency Contact &amp; Medical</h2>
+                            <div class="bs-grid">
+                              <div class="bs-field">
+                                <label>Emergency Contact Name<span class="req">*</span></label>
+                                <input class="bs-input" type="text" name="emergency_name" required>
+                                <span class="bs-error-text">Emergency contact name is required.</span>
+                              </div>
+                              <div class="bs-field">
+                                <label>Relationship to You<span class="req">*</span></label>
+                                <input class="bs-input" type="text" name="emergency_relationship" required>
+                                <span class="bs-error-text">Relationship is required.</span>
+                              </div>
+                              <div class="bs-field">
+                                <label>Contact Phone Number<span class="req">*</span></label>
+                                <input class="bs-input" type="tel" name="emergency_phone" required>
+                                <span class="bs-error-text">Emergency phone number is required.</span>
+                              </div>
+                              <div class="bs-field">
+                                <label>Contact Address</label>
+                                <input class="bs-input" type="text" name="emergency_address">
+                              </div>
+                              <div class="bs-field span-2">
+                                <label>Do you have any medical conditions we should be aware of?</label>
+                                <textarea class="bs-textarea" name="medical_notes" placeholder="Optional"></textarea>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- STEP 8 : DECLARATION & SIGN -->
+                          <div class="bs-panel" data-panel="7">
+                            <h2 class="bs-panel__title">8. Declaration</h2>
+                            <p class="bs-panel__hint">Please read carefully before signing.</p>
+
+                            <div class="bs-summary" id="bsSummary"></div>
+
+                            <div class="bs-checkbox-row" style="margin-top:2rem;">
+                              <input type="checkbox" id="declare1" name="declare_accurate" required>
+                              <label for="declare1">I confirm that the information I have provided in this application is true, complete and accurate to the best of my knowledge. I understand that providing false information may result in withdrawal of any offer of employment or termination of employment.</label>
+                            </div>
+                            <div class="bs-checkbox-row">
+                              <input type="checkbox" id="declare2" name="declare_consent" required>
+                              <label for="declare2">I consent to the company and its appointed screening provider carrying out BS7858:2019 pre-employment screening checks, including verification of identity, address, employment history, financial probity and, where applicable, criminal record checks.</label>
+                            </div>
+
+                            <div class="bs-grid" style="margin-top:2.4rem;">
+                              <div class="bs-field">
+                                <label>Full Name (Print)<span class="req">*</span></label>
+                                <input class="bs-input" type="text" name="sign_name" required>
+                                <span class="bs-error-text">Please print your full name.</span>
+                              </div>
+                              <div class="bs-field">
+                                <label>Date<span class="req">*</span></label>
+                                <input class="bs-input" type="date" name="sign_date" required>
+                                <span class="bs-error-text">Please enter today's date.</span>
+                              </div>
+                              <div class="bs-field span-2">
+                                <label>Signature (type your full name to sign)<span class="req">*</span></label>
+                                <input class="bs-input" type="text" name="signature" style="font-family:'Brush Script MT', cursive; font-size:2rem;" required>
+                                <span class="bs-error-text">Please sign by typing your full name.</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="bs-nav">
+                            <button type="button" class="bs-btn bs-btn--ghost" id="bsPrevBtn">Back</button>
+                            <button type="button" class="bs-btn bs-btn--primary" id="bsNextBtn">Continue</button>
+                            <button type="submit" class="bs-btn bs-btn--submit" id="bsSubmitBtn" style="display:none;">Submit Application</button>
+                          </div>
+
+                        </form>
+
+                        <div class="bs-success" id="bsSuccess">
+                          <div class="bs-success__icon">&#10003;</div>
+                          <h2>Application Submitted</h2>
+                          <p>Thank you. Your BS7858 screening application has been received. Our team will be in touch by email to request supporting documentation.</p>
+                        </div>
                       </div>
-                      </div>
-                  </div>
+                    </div>
                 </div>
                     </div>
                     
@@ -475,40 +570,648 @@
                   })
               </script>
               <script>
-                $(document).ready(function() {
-                    $('#btn_Gonder').click(function() {
-                        
-                    //alert("test");
-                    
-                        var isim = $('#txt_isim').val();
-                        var eposta = $('#txt_eposta').val();
-                        var telefon = $('#txt_telefon').val();
-                        var mesaj = $('#txt_mesaj').val();
-                            var json_data = {};
-                            json_data.isim = isim;
-                            json_data.eposta = eposta;
-                            json_data.telefon = telefon;
-                            json_data.mesaj = mesaj;
-                            $.ajax({
-                                url: "form/Contact-Form-Send.php",
-                                method: "post",
-                                data: json_data,
-                                success: function(response) {
-                                    if (response == "Success") {
-                                        alert("Mesajınız Gönderildi.");
-                                    } else if (response == "Failed") {
-                                        alert("Mesajınız Gönderilemedi. Lütfen Tekrar Deneyiniz.");
-                                    } 
-                                    console.log(response);
-                                    if (response.trim() == "Success") console.log("Success");
-                                    else
-                                        console.log("Failed :  " + response);
-                                }
-                            });
+              (function(){
+                "use strict";
+
+                var form = document.getElementById('bs7858Form');
+                var panels = Array.prototype.slice.call(document.querySelectorAll('.bs-panel'));
+                var steps = Array.prototype.slice.call(document.querySelectorAll('.bs-step'));
+                var stepsFill = document.getElementById('bsStepsFill');
+                var prevBtn = document.getElementById('bsPrevBtn');
+                var nextBtn = document.getElementById('bsNextBtn');
+                var submitBtn = document.getElementById('bsSubmitBtn');
+                var current = 0;
+
+                /* ---------- repeater factory ---------- */
+                function makeRepeater(opts){
+                  var container = document.getElementById(opts.containerId);
+                  var addBtn = document.getElementById(opts.addBtnId);
+                  var count = 0;
+
+                  function addEntry(prefillRequired){
+                    count++;
+                    var id = opts.prefix + '_' + count;
+                    var wrap = document.createElement('div');
+                    wrap.className = 'bs-entry';
+                    wrap.dataset.entryId = id;
+                    wrap.innerHTML = opts.template(id, count, !!prefillRequired);
+                    container.appendChild(wrap);
+
+                    var removeBtn = wrap.querySelector('.bs-entry__remove');
+                    if(removeBtn){
+                      removeBtn.addEventListener('click', function(){
+                        wrap.remove();
+                        renumber();
+                        if(opts.onChange) opts.onChange();
+                      });
+                    }
+                    wrap.addEventListener('input', function(){ if(opts.onChange) opts.onChange(); });
+                    renumber();
+                    if(opts.onChange) opts.onChange();
+                    return wrap;
+                  }
+
+                  function renumber(){
+                    var entries = container.querySelectorAll('.bs-entry');
+                    entries.forEach(function(el, i){
+                      var h = el.querySelector('h4');
+                      if(h) h.textContent = opts.title + ' ' + (i+1);
+                      var rm = el.querySelector('.bs-entry__remove');
+                      if(rm) rm.style.display = (entries.length <= opts.minEntries) ? 'none' : 'inline-block';
                     });
+                  }
+
+                  addBtn.addEventListener('click', function(){ addEntry(false); });
+
+                  // seed minimum entries
+                  for(var i=0;i<opts.minEntries;i++){ addEntry(i===0); }
+
+                  return { addEntry: addEntry, container: container };
+                }
+
+                /* ---------- ADDRESS REPEATER ---------- */
+                var addressRepeater = makeRepeater({
+                  containerId: 'addressRepeater',
+                  addBtnId: 'addAddressBtn',
+                  prefix: 'addr',
+                  title: 'Address',
+                  minEntries: 1,
+                  onChange: checkAddressGaps,
+                  template: function(id, n, isFirst){
+                    return ''+
+                    '<div class="bs-entry__head"><h4>Address '+n+'</h4>'+
+                      (n>1 ? '<button type="button" class="bs-entry__remove">Remove</button>' : '<span></span>')+
+                    '</div>'+
+                    '<div class="bs-grid">'+
+                      '<div class="bs-field span-2"><label>House Number &amp; Street<span class="req">*</span></label>'+
+                        '<input class="bs-input" type="text" name="'+id+'_line1" required></div>'+
+                      '<div class="bs-field"><label>Town / City<span class="req">*</span></label>'+
+                        '<input class="bs-input" type="text" name="'+id+'_town" required></div>'+
+                      '<div class="bs-field"><label>County</label>'+
+                        '<input class="bs-input" type="text" name="'+id+'_county"></div>'+
+                      '<div class="bs-field"><label>Postcode<span class="req">*</span></label>'+
+                        '<input class="bs-input" type="text" name="'+id+'_postcode" required></div>'+
+                      '<div class="bs-field"><label>Country<span class="req">*</span></label>'+
+                        '<input class="bs-input" type="text" name="'+id+'_country" value="United Kingdom" required></div>'+
+                      '<div class="bs-field"><label>Date Moved In<span class="req">*</span></label>'+
+                        '<input class="bs-input bs-addr-from" type="month" name="'+id+'_from" required></div>'+
+                      '<div class="bs-field"><label>Date Moved Out (leave blank if current)</label>'+
+                        '<input class="bs-input bs-addr-to" type="month" name="'+id+'_to"></div>'+
+                    '</div>';
+                  }
                 });
+
+                /* ---------- EMPLOYMENT / ACTIVITY REPEATER ---------- */
+                var employmentRepeater = makeRepeater({
+                  containerId: 'employmentRepeater',
+                  addBtnId: 'addEmploymentBtn',
+                  prefix: 'emp',
+                  title: 'Period',
+                  minEntries: 1,
+                  onChange: checkEmploymentGaps,
+                  template: function(id, n){
+                    return ''+
+                    '<div class="bs-entry__head"><h4>Period '+n+'</h4>'+
+                      (n>1 ? '<button type="button" class="bs-entry__remove">Remove</button>' : '<span></span>')+
+                    '</div>'+
+                    '<div class="bs-grid">'+
+                      '<div class="bs-field"><label>Activity Type<span class="req">*</span></label>'+
+                        '<select class="bs-select" name="'+id+'_type" required>'+
+                          '<option value="">Select</option>'+
+                          '<option>Employment</option><option>Self-Employment</option>'+
+                          '<option>Education / Training</option><option>Unemployment</option>'+
+                          '<option>Travel</option><option>Career Break / Other</option>'+
+                        '</select></div>'+
+                      '<div class="bs-field"><label>Employer / Organisation Name<span class="req">*</span></label>'+
+                        '<input class="bs-input" type="text" name="'+id+'_employer" required></div>'+
+                      '<div class="bs-field span-2"><label>Employer Address</label>'+
+                        '<input class="bs-input" type="text" name="'+id+'_employer_address"></div>'+
+                      '<div class="bs-field"><label>Job Title / Role</label>'+
+                        '<input class="bs-input" type="text" name="'+id+'_role"></div>'+
+                      '<div class="bs-field"><label>Manager / Supervisor Name</label>'+
+                        '<input class="bs-input" type="text" name="'+id+'_supervisor"></div>'+
+                      '<div class="bs-field"><label>Supervisor Phone or Email</label>'+
+                        '<input class="bs-input" type="text" name="'+id+'_supervisor_contact"></div>'+
+                      '<div class="bs-field"><label>Reason for Leaving</label>'+
+                        '<input class="bs-input" type="text" name="'+id+'_reason"></div>'+
+                      '<div class="bs-field"><label>From<span class="req">*</span></label>'+
+                        '<input class="bs-input bs-emp-from" type="month" name="'+id+'_from" required></div>'+
+                      '<div class="bs-field"><label>To (leave blank if current)</label>'+
+                        '<input class="bs-input bs-emp-to" type="month" name="'+id+'_to"></div>'+
+                    '</div>';
+                  }
+                });
+
+                /* ---------- REFERENCE REPEATER (fixed at 2) ---------- */
+                var refCount = 0;
+                var refContainer = document.getElementById('referenceRepeater');
+                function addReference(){
+                  refCount++;
+                  var id = 'ref_' + refCount;
+                  var wrap = document.createElement('div');
+                  wrap.className = 'bs-entry';
+                  wrap.innerHTML = ''+
+                    '<div class="bs-entry__head"><h4>Reference '+refCount+'</h4><span></span></div>'+
+                    '<div class="bs-grid">'+
+                      '<div class="bs-field"><label>Full Name<span class="req">*</span></label>'+
+                        '<input class="bs-input" type="text" name="'+id+'_name" required></div>'+
+                      '<div class="bs-field"><label>Relationship to You<span class="req">*</span></label>'+
+                        '<input class="bs-input" type="text" name="'+id+'_relationship" required></div>'+
+                      '<div class="bs-field"><label>Company / Organisation</label>'+
+                        '<input class="bs-input" type="text" name="'+id+'_company"></div>'+
+                      '<div class="bs-field"><label>Years Known<span class="req">*</span></label>'+
+                        '<input class="bs-input" type="number" min="2" name="'+id+'_years" required></div>'+
+                      '<div class="bs-field span-2"><label>Address</label>'+
+                        '<input class="bs-input" type="text" name="'+id+'_address"></div>'+
+                      '<div class="bs-field"><label>Phone Number<span class="req">*</span></label>'+
+                        '<input class="bs-input" type="tel" name="'+id+'_phone" required></div>'+
+                      '<div class="bs-field"><label>Email Address</label>'+
+                        '<input class="bs-input" type="email" name="'+id+'_email"></div>'+
+                    '</div>';
+                  refContainer.appendChild(wrap);
+                }
+                addReference();
+                addReference();
+
+                /* ---------- gap checking (simple, advisory) ---------- */
+                function monthsBetween(fromStr, toStr){
+                  var from = new Date(fromStr + '-01');
+                  var to = toStr ? new Date(toStr + '-01') : new Date();
+                  return (to - from) / (1000*60*60*24*30.44);
+                }
+
+                function checkGapsGeneric(containerSelectorFrom, containerSelectorTo, warningEl){
+                  var froms = Array.prototype.slice.call(document.querySelectorAll(containerSelectorFrom));
+                  var entries = froms.map(function(f){
+                    var entry = f.closest('.bs-entry');
+                    var to = entry.querySelector(containerSelectorTo);
+                    return { from: f.value, to: to ? to.value : '' };
+                  }).filter(function(e){ return e.from; });
+
+                  entries.sort(function(a,b){ return a.from.localeCompare(b.from); });
+
+                  var gapMsgs = [];
+                  for(var i=0;i<entries.length-1;i++){
+                    var endOfThis = entries[i].to || null;
+                    var startOfNext = entries[i+1].from;
+                    if(endOfThis){
+                      var gapDays = (new Date(startOfNext+'-01') - new Date(endOfThis+'-01')) / (1000*60*60*24);
+                      if(gapDays > 31){
+                        gapMsgs.push('Gap detected between ' + endOfThis + ' and ' + startOfNext + ' (' + Math.round(gapDays) + ' days). Please add an entry to cover this period.');
+                      }
+                    }
+                  }
+                  if(gapMsgs.length){
+                    warningEl.innerHTML = '&#9888; ' + gapMsgs.join('<br>&#9888; ');
+                    warningEl.classList.add('show');
+                  } else {
+                    warningEl.classList.remove('show');
+                  }
+                }
+
+                function checkAddressGaps(){
+                  checkGapsGeneric('.bs-addr-from', '.bs-addr-to', document.getElementById('addressGapWarning'));
+                }
+                function checkEmploymentGaps(){
+                  checkGapsGeneric('.bs-emp-from', '.bs-emp-to', document.getElementById('employmentGapWarning'));
+                }
+
+                /* ---------- step navigation ---------- */
+                function updateProgress(){
+                  panels.forEach(function(p, i){ p.classList.toggle('is-active', i === current); });
+                  steps.forEach(function(s, i){
+                    s.classList.toggle('is-active', i === current);
+                    s.classList.toggle('is-done', i < current);
+                  });
+                  var pct = (current / (steps.length - 1)) * 90; // align with track inset
+                  stepsFill.style.width = pct + '%';
+
+                  prevBtn.style.visibility = current === 0 ? 'hidden' : 'visible';
+                  nextBtn.style.display = current === panels.length - 1 ? 'none' : 'inline-block';
+                  submitBtn.style.display = current === panels.length - 1 ? 'inline-block' : 'none';
+
+                  if(current === panels.length - 1){ buildSummary(); }
+                  window.scrollTo({top: document.querySelector('.bs-card').offsetTop - 30, behavior:'smooth'});
+                }
+
+                function validatePanel(panel){
+                  var valid = true;
+                  var fields = panel.querySelectorAll('[required]');
+                  fields.forEach(function(f){
+                    var wrap = f.closest('.bs-field') || f.parentElement;
+                    var ok = true;
+                    if(f.type === 'radio'){
+                      var group = panel.querySelectorAll('[name="'+f.name+'"]');
+                      ok = Array.prototype.some.call(group, function(r){return r.checked;});
+                      wrap = f.closest('.bs-field');
+                    } else if(f.type === 'checkbox'){
+                      ok = f.checked;
+                      wrap = f.closest('.bs-checkbox-row');
+                    } else {
+                      ok = f.value.trim() !== '';
+                    }
+                    if(wrap){ wrap.classList.toggle('has-error', !ok); }
+                    if(!ok) valid = false;
+                  });
+                  return valid;
+                }
+
+                nextBtn.addEventListener('click', function(){
+                  var panel = panels[current];
+                  if(!validatePanel(panel)){
+                    var firstError = panel.querySelector('.has-error');
+                    if(firstError) firstError.scrollIntoView({behavior:'smooth', block:'center'});
+                    return;
+                  }
+                  if(current < panels.length - 1){ current++; updateProgress(); }
+                });
+
+                prevBtn.addEventListener('click', function(){
+                  if(current > 0){ current--; updateProgress(); }
+                });
+
+                steps.forEach(function(s){
+                  s.addEventListener('click', function(){
+                    var target = parseInt(s.dataset.step, 10);
+                    if(target < current){ current = target; updateProgress(); }
+                  });
+                });
+
+                /* ─────────────────────────────────────────────────
+                   HELPERS – collect form data into labelled sections
+                   ───────────────────────────────────────────────── */
+                function val(name){ return (form.elements[name] && form.elements[name].value) || ''; }
+
+                function radioVal(name){
+                  var els = form.querySelectorAll('[name="'+name+'"]');
+                  for(var i=0;i<els.length;i++){ if(els[i].checked) return els[i].value; }
+                  return '';
+                }
+
+                function repeaterData(prefix, fields){
+                  var results = [];
+                  var entries = form.querySelectorAll('[name^="'+prefix+'_1_"],[name^="'+prefix+'_2_"],[name^="'+prefix+'_3_"],[name^="'+prefix+'_4_"],[name^="'+prefix+'_5_"],[name^="'+prefix+'_6_"]');
+                  var ids = [];
+                  entries.forEach(function(el){
+                    var m = el.name.match(/^([a-z]+_\d+)_/);
+                    if(m && ids.indexOf(m[1]) === -1) ids.push(m[1]);
+                  });
+                  ids.forEach(function(id){
+                    var obj = {};
+                    fields.forEach(function(f){
+                      var el = form.elements[id+'_'+f];
+                      if(el) obj[f] = el.value;
+                    });
+                    results.push(obj);
+                  });
+                  return results;
+                }
+
+                function getSections(){
+                  return {
+                    personal:{
+                      title:'1. Personal Details',
+                      rows:[
+                        ['Title', val('title')],
+                        ['First Name', val('first_name')],
+                        ['Middle Name(s)', val('middle_name')],
+                        ['Surname', val('surname')],
+                        ['Former / Maiden Name(s)', val('former_name')],
+                        ['Date of Birth', val('dob')],
+                        ['Place of Birth', val('birth_place')],
+                        ['Gender', val('gender')],
+                        ['National Insurance No.', val('ni_number')],
+                        ['Nationality', val('nationality')],
+                        ['Mobile', val('mobile')],
+                        ['Email', val('email')],
+                        ['Position Applied For', val('position_applied')],
+                        ['SIA Licence No.', val('sia_licence')],
+                        ['SIA Licence Expiry', val('sia_expiry')],
+                        ['SIA Licence Sector(s)', val('sia_sector')]
+                      ]
+                    },
+                    addresses:{
+                      title:'2. Address History',
+                      repeater: repeaterData('addr',['line1','town','county','postcode','country','from','to'])
+                    },
+                    employment:{
+                      title:'3. Employment & Activity History',
+                      repeater: repeaterData('emp',['type','employer','employer_address','role','supervisor','supervisor_contact','reason','from','to'])
+                    },
+                    identity:{
+                      title:'4. Identity & Right to Work',
+                      rows:[
+                        ['Primary Doc Type', val('id1_type')],
+                        ['Primary Doc Number', val('id1_number')],
+                        ['Issuing Country', val('id1_country')],
+                        ['Primary Doc Expiry', val('id1_expiry')],
+                        ['Secondary Doc Type', val('id2_type')],
+                        ['Secondary Doc Ref', val('id2_number')],
+                        ['Secondary Doc Date', val('id2_date')],
+                        ['Right to Work in UK', radioVal('right_to_work')],
+                        ['Visa / Permit Reference', val('visa_reference')]
+                      ]
+                    },
+                    disclosure:{
+                      title:'5. Criminal Record & Financial Disclosure',
+                      rows:[
+                        ['Prior Criminal Conviction?', radioVal('convicted')],
+                        ['Conviction Details', val('convicted_details')],
+                        ['Pending Criminal Proceedings?', radioVal('pending')],
+                        ['Bankruptcy / CCJ / IVA?', radioVal('financial')],
+                        ['Financial Details', val('financial_details')],
+                        ['Ever Dismissed / Asked to Resign?', radioVal('dismissed')]
+                      ]
+                    },
+                    references:{
+                      title:'6. Character References',
+                      repeater: repeaterData('ref',['name','relationship','company','years','address','phone','email'])
+                    },
+                    emergency:{
+                      title:'7. Emergency Contact & Medical',
+                      rows:[
+                        ['Contact Name', val('emergency_name')],
+                        ['Relationship', val('emergency_relationship')],
+                        ['Phone Number', val('emergency_phone')],
+                        ['Address', val('emergency_address')],
+                        ['Medical Notes', val('medical_notes')]
+                      ]
+                    },
+                    declaration:{
+                      title:'8. Declaration',
+                      rows:[
+                        ['Printed Name', val('sign_name')],
+                        ['Date Signed', val('sign_date')],
+                        ['Signature', val('signature')]
+                      ]
+                    }
+                  };
+                }
+
+                /* ─────────────────────────────────────────────────
+                   DECLARATION PANEL SUMMARY (human-readable preview)
+                   ───────────────────────────────────────────────── */
+                function buildSummary(){
+                  var sections = getSections();
+                  var lines = [];
+                  Object.values(sections).forEach(function(sec){
+                    lines.push('══ ' + sec.title.toUpperCase() + ' ══');
+                    if(sec.rows){
+                      sec.rows.forEach(function(r){ if(r[1]) lines.push('  ' + r[0] + ': ' + r[1]); });
+                    }
+                    if(sec.repeater){
+                      sec.repeater.forEach(function(entry, i){
+                        lines.push('  — Entry ' + (i+1) + ' —');
+                        Object.entries(entry).forEach(function(kv){ if(kv[1]) lines.push('    ' + kv[0] + ': ' + kv[1]); });
+                      });
+                    }
+                    lines.push('');
+                  });
+                  document.getElementById('bsSummary').textContent = lines.join('\n');
+                }
+
+                /* ─────────────────────────────────────────────────
+                   PDF GENERATOR  (jsPDF — loaded from CDN below)
+                   ───────────────────────────────────────────────── */
+                function generatePDF(sections){
+                  var jsPDF = window.jspdf.jsPDF;
+                  var doc = new jsPDF({ orientation:'portrait', unit:'mm', format:'a4' });
+
+                  var M = 14;                       // left/right margin
+                  var PW = 210;                     // page width mm
+                  var CW = PW - M*2;                // content width
+                  var y  = M;
+                  var lh = 5.8;                     // line height
+
+                  function newPage(){ doc.addPage(); y = M; }
+                  function guard(need){ if(y + need > 286){ newPage(); } }
+
+                  /* ── document header ── */
+                  doc.setFillColor(0,0,0);
+                  doc.rect(0, 0, PW, 24, 'F');
+                  doc.setFont('helvetica','bold');
+                  doc.setFontSize(13);
+                  doc.setTextColor(255,255,255);
+                  doc.text('BS7858:2019 PRE-EMPLOYMENT SCREENING APPLICATION', PW/2, 10, {align:'center'});
+                  doc.setFont('helvetica','normal');
+                  doc.setFontSize(8);
+                  doc.setTextColor(180,180,180);
+                  doc.text('CONFIDENTIAL — Handle in accordance with UK GDPR / Data Protection Act 2018', PW/2, 17, {align:'center'});
+                  doc.setTextColor(0,0,0);
+
+                  /* applicant name + date banner */
+                  var applicantName = (sections.personal.rows[1][1] + ' ' + sections.personal.rows[3][1]).trim();
+                  var signedDate = sections.declaration.rows[1][1] || new Date().toISOString().slice(0,10);
+                  doc.setFillColor(250,250,250);
+                  doc.setDrawColor(220,220,220);
+                  doc.roundedRect(M, 28, CW, 10, 1, 1, 'FD');
+                  doc.setFont('helvetica','bold');
+                  doc.setFontSize(9);
+                  doc.text('Applicant: ' + applicantName, M+4, 34.5);
+                  doc.setFont('helvetica','normal');
+                  doc.text('Date: ' + signedDate, PW-M-4, 34.5, {align:'right'});
+                  y = 44;
+
+                  /* ── section heading ── */
+                  function sectionHead(title){
+                    guard(12);
+                    doc.setFillColor(41,41,41);
+                    doc.rect(M, y, CW, 7, 'F');
+                    doc.setFont('helvetica','bold');
+                    doc.setFontSize(8.5);
+                    doc.setTextColor(255,255,255);
+                    doc.text(title.toUpperCase(), M+3, y+5);
+                    doc.setTextColor(0,0,0);
+                    y += 9;
+                  }
+
+                  /* ── key/value row ── */
+                  function row(label, value){
+                    if(!value || value.toString().trim() === '') return;
+                    guard(lh + 2);
+                    var labelW = 55;
+                    doc.setFont('helvetica','bold');
+                    doc.setFontSize(8);
+                    doc.setTextColor(80,80,80);
+                    doc.text(label, M+2, y);
+                    doc.setFont('helvetica','normal');
+                    doc.setTextColor(0,0,0);
+                    var wrapped = doc.splitTextToSize(String(value), CW - labelW - 4);
+                    doc.text(wrapped, M + labelW, y);
+                    y += lh * Math.max(wrapped.length, 1) + 1;
+                  }
+
+                  /* ── grey sub-header for repeater entries ── */
+                  function entryHead(text){
+                    guard(8);
+                    doc.setFillColor(230,230,230);
+                    doc.rect(M, y, CW, 6, 'F');
+                    doc.setFont('helvetica','bold');
+                    doc.setFontSize(8);
+                    doc.setTextColor(50,50,50);
+                    doc.text(text, M+3, y+4.2);
+                    doc.setTextColor(0,0,0);
+                    y += 7.5;
+                  }
+
+                  /* ── light horizontal rule ── */
+                  function rule(){
+                    guard(3);
+                    doc.setDrawColor(220,220,220);
+                    doc.line(M, y, M+CW, y);
+                    y += 3;
+                  }
+
+                  var repeatLabels = {
+                    addr: {
+                      title: 'Address',
+                      map: [['line1','Street'],['town','Town / City'],['county','County'],['postcode','Postcode'],['country','Country'],['from','From'],['to','To (blank = current)']]
+                    },
+                    emp: {
+                      title: 'Period',
+                      map: [['type','Activity Type'],['employer','Employer / Organisation'],['employer_address','Address'],['role','Job Title / Role'],['supervisor','Supervisor'],['supervisor_contact','Supervisor Contact'],['reason','Reason for Leaving'],['from','From'],['to','To (blank = current)']]
+                    },
+                    ref: {
+                      title: 'Reference',
+                      map: [['name','Full Name'],['relationship','Relationship'],['company','Company'],['years','Years Known'],['address','Address'],['phone','Phone'],['email','Email']]
+                    }
+                  };
+
+                  /* ── render each section ── */
+                  Object.entries(sections).forEach(function(entry){
+                    var key = entry[0];
+                    var sec = entry[1];
+                    sectionHead(sec.title);
+
+                    if(sec.rows){
+                      sec.rows.forEach(function(r){ row(r[0], r[1]); });
+                    }
+
+                    if(sec.repeater && sec.repeater.length > 0){
+                      var rl = repeatLabels[key === 'addresses' ? 'addr' : key === 'employment' ? 'emp' : 'ref'] || null;
+                      sec.repeater.forEach(function(obj, i){
+                        var heading = rl ? rl.title + ' ' + (i+1) : 'Entry ' + (i+1);
+                        entryHead(heading);
+                        if(rl){
+                          rl.map.forEach(function(m){
+                            row(m[1], obj[m[0]]);
+                          });
+                        } else {
+                          Object.entries(obj).forEach(function(kv){ row(kv[0], kv[1]); });
+                        }
+                        rule();
+                      });
+                    }
+                    y += 3;
+                  });
+
+                  /* ── signature box at end ── */
+                  guard(30);
+                  doc.setDrawColor(0,0,0);
+                  doc.setLineWidth(0.4);
+                  doc.rect(M, y, CW, 24, 'D');
+                  doc.setFont('helvetica','bold');
+                  doc.setFontSize(8);
+                  doc.text('APPLICANT SIGNATURE', M+3, y+6);
+                  doc.setFont('helvetica','italic');
+                  doc.setFontSize(14);
+                  doc.setTextColor(50,50,50);
+                  doc.text(sections.declaration.rows[2][1] || '', M+4, y+17);
+                  doc.setTextColor(0,0,0);
+                  doc.setFont('helvetica','normal');
+                  doc.setFontSize(7);
+                  doc.text('Signed electronically on ' + (sections.declaration.rows[1][1] || signedDate), M+3, y+22);
+                  y += 28;
+
+                  /* ── footer on every page ── */
+                  var totalPages = doc.getNumberOfPages();
+                  for(var p=1; p<=totalPages; p++){
+                    doc.setPage(p);
+                    doc.setFont('helvetica','normal');
+                    doc.setFontSize(7);
+                    doc.setTextColor(160,160,160);
+                    doc.text('BS7858:2019 Screening Application — ' + applicantName + ' — CONFIDENTIAL', M, 293);
+                    doc.text('Page ' + p + ' of ' + totalPages, PW-M, 293, {align:'right'});
+                    doc.setTextColor(0,0,0);
+                  }
+
+                  return doc;
+                }
+
+                /* ─────────────────────────────────────────────────
+                   SUBMIT  — PDF download  +  Formspree email
+                   ───────────────────────────────────────────────── */
+                form.addEventListener('submit', function(e){
+                  e.preventDefault();
+                  if(!validatePanel(panels[panels.length-1])){
+                    var err = panels[panels.length-1].querySelector('.has-error');
+                    if(err) err.scrollIntoView({behavior:'smooth',block:'center'});
+                    return;
+                  }
+
+                  /* disable submit button to prevent double-click */
+                  submitBtn.disabled = true;
+                  submitBtn.textContent = 'Processing…';
+
+                  var sections = getSections();
+
+                  /* 1 ── generate & auto-download PDF for applicant */
+                  try{
+                    var pdf = generatePDF(sections);
+                    var firstName = sections.personal.rows[1][1] || 'applicant';
+                    var lastName  = sections.personal.rows[3][1] || '';
+                    pdf.save('BS7858_Application_' + firstName + '_' + lastName + '.pdf');
+                  } catch(pdfErr){
+                    console.warn('PDF generation failed:', pdfErr);
+                  }
+
+                  /* 2 ── POST to Formspree so HR receives email
+                          ↓ Replace with YOUR Formspree endpoint ↓
+                          Sign up free at https://formspree.io       */
+                  var FORMSPREE_ENDPOINT = 'https://formspree.io/f/mojoywwg';
+
+                  fetch(FORMSPREE_ENDPOINT, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                  })
+                  .then(function(res){
+                    if(res.ok){
+                      showSuccess();
+                    } else {
+                      res.json().then(function(d){
+                        /* Formspree returns field-level errors */
+                        console.error('Formspree error:', d);
+                        showSuccess(true); /* still show success — PDF already downloaded */
+                      });
+                    }
+                  })
+                  .catch(function(){
+                    /* Network offline etc — PDF still downloaded, show soft warning */
+                    showSuccess(true);
+                  });
+
+                });
+
+                function showSuccess(emailFailed){
+                  form.style.display = 'none';
+                  document.querySelectorAll('.bs-nav').forEach(function(el){ el.style.display='none'; });
+                  document.querySelectorAll('#bsSteps').forEach(function(el){ el.style.display='none'; });
+                  var s = document.getElementById('bsSuccess');
+                  s.classList.add('show');
+                  if(emailFailed){
+                    var note = document.createElement('p');
+                    note.style.cssText = 'color:#8a6116;background:#fff6e5;border:1px solid #f0c36d;padding:1rem 1.4rem;border-radius:.3rem;font-size:1.2rem;margin-top:1.2rem;max-width:480px;margin-left:auto;margin-right:auto;';
+                    note.textContent = 'Your PDF has been saved to your device. Our team could not be reached by email at this moment — please email your PDF directly to hr@yourcompany.com.';
+                    s.appendChild(note);
+                  }
+                }
+
+                updateProgress();
+              })();
               </script>
-          </footer>
-          <script src="js/jquery-1.11.3.min.js"></script>
+
+              <!-- jsPDF — client-side PDF generation, no server required -->
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   </body>
 </html>
